@@ -55,8 +55,9 @@ public class IpResolver {
             }
         }
 
-        //ende: 13:31
+        //end: 13:31
         //all tests working: 13:42 :-)
+        //
 
     }
 
@@ -74,10 +75,8 @@ public class IpResolver {
             return value.equals("0");
         }
 
-        if (value == null || value.isBlank()) {
-            return result;
-        }
         int iValue = Integer.parseInt(value);
+
         if (iValue >= 0 && iValue <= 255) {
             result = true;
         }
